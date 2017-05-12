@@ -1,0 +1,26 @@
+doctype html
+html
+	head
+		link(href="node_modules/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")
+		title Inscription
+	body
+		
+		h1 Inscription
+		h2 Étape 1
+		div.col-md-4
+			form(action="/signup1", method="POST")
+				div.form-group
+					label Nom :    
+					input.form-control(type="text", name="nom" placeholder="Nom")
+					label Prénom :    
+					input.form-control(type="text", name="prenom" placeholder="Prénom")
+					label Date de naissance :
+					input.form-control(type="date", name="date" placeholder="")
+					label Adresse :
+					textarea.form-control(name="adress")
+				button.btn.btn-success(type="submit") page suivante
+		
+
+
+		script(src="node_modules/jquery/dist/jquery.js")
+		script(src="node_modules/bootstrap/dist/js/bootstrap.min.js")

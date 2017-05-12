@@ -1,0 +1,40 @@
+doctype html
+html
+	head
+		link(href="node_modules/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")
+		title Inscription
+	body
+		
+		h1 Inscription
+		h2 Étape 3
+		h3 Diplomes
+		div.radio.editList
+			label 1
+				input(type="radio", name="editList", value="1")
+			label 2
+				input(type="radio", name="editList", value="2")
+			label 3
+				input(type="radio", name="editList", value="3")
+			label 4
+				input(type="radio", name="editList", value="4")
+			label 5
+				input(type="radio", name="editList", value="5")
+
+		h3 Comment avez vous connu Simplon
+		div.checkbox
+			label 1
+				input(type="checkbox", value="1")
+			label 2
+				input(type="checkbox", value="2")
+			label 3
+				input(type="checkbox", value="3")
+			label 4
+				input(type="checkbox", value="4")
+			label 5
+				input(type="checkbox", value="5")
+		button.btn.btn-success Validation
+	
+
+
+		script(src="node_modules/jquery/dist/jquery.js")
+		script(src="node_modules/bootstrap/dist/js/bootstrap.min.js")
